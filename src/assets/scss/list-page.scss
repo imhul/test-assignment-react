@@ -1,0 +1,39 @@
+.Academies {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1300px;
+    width: 100%;
+    height: 100%;
+    padding: 25px;
+    align-items: center;
+    font-size: 16px;
+    &.empty {
+        text-align: center;
+        font-size: 24px;
+    }
+    .AcademyCard {
+        width: 25%;
+        max-width: 300px;
+        .ant-card-body {
+            .ant-card-meta {
+                .ant-card-meta-avatar {
+                    max-width: 100px;
+                    canvas {
+                        width: 100% !important;
+                        height: auto !important;
+                    }
+                }
+                .ant-card-meta-detail {
+                    .ant-card-meta-description {
+                        .truncate {
+                            white-space: nowrap;
+                            overflow: hidden;
+                            text-overflow: ellipsis;
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
